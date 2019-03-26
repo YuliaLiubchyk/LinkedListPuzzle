@@ -13,7 +13,7 @@ public class FindInfiniteLoop {
     public static void main(String args[]) {
         Node headWithoutLoop = null;
         for (int i = 10; i > 0; i--) {
-            headWithoutLoop = new Node(" " + i, headWithoutLoop);
+            headWithoutLoop = new Node(" " + null, headWithoutLoop);
         }
 
         System.out.println("Loop Existence : " + doesLoopExist(headWithoutLoop));
